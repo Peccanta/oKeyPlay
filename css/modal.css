@@ -1,0 +1,154 @@
+.modal {
+    /* Не обязательно  block */
+    display: none;
+    width: 500px;
+    max-width: 100%;
+    height: 700px;
+    max-height: 100%;
+    position: fixed;
+    font-size: 30px;
+    color: black;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 501px) {
+    .modal {
+        width: 370px !important;
+        height: 700px;
+        font-size: 25px !important;
+    }
+    #input_modal {
+        font-size: 25px !important;
+        width: 260px !important;
+    }
+    .black {
+        width: 370px !important;
+    }
+    .ofor {
+        transform: translateX(-35px) !important;
+    }
+    #form_users {
+        transform: translateX(-45px) !important;
+    }
+    .button_submit_cart {
+        transform: translateX(-15px) !important;
+    }
+}
+
+#input_modal {
+    font-size: 30px;
+    width: 312px;
+}
+
+#input_modal:nth-child(1) {
+    margin-top: 3px;
+    text-align: center;
+}
+
+#input_modal:nth-child(4) {
+    margin-top: 3px;
+    text-align: center;
+}
+
+#none_summ {
+    display: none;
+}
+
+.closed {
+    display: block;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal .close-button {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: red;
+    color: white;
+    padding: 0px 6px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.modal .close-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.open-button {
+    border: 0;
+    position: absolute;
+    background: #f8ba10;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.button_submit_cart {
+    border: 0;
+    background: #f8ba10;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+    margin-left: 75px;
+}
+
+.button_submit_cart:hover {
+    background: red;
+    color: white;
+}
+
+form {
+    margin-top: 170px;
+    margin-left: 95px;
+}
+
+.ofor {
+    margin-left: 72px;
+    margin-top: 5px;
+}
+
+.modal .black {
+    width: 500px;
+    height: 50px;
+    background-color: grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.mini_cart_summ {
+    margin-left: 40px;
+}
+
+.displaynonelogin {
+    display: none;
+}

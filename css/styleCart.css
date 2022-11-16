@@ -1,0 +1,421 @@
+* {
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    background-image: url("../models/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1300px) {
+    .nav3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .hamburger {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav2 {
+        display: none;
+    }
+    .hidden_nav a {
+        font-size: 8vw !important;
+    }
+    .hidden_nav a:first-child {
+        margin-top: 20% !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hidden_nav a {
+        font-size: 11vw !important;
+    }
+    .hidden_nav a:first-child {
+        margin-top: 50% !important;
+    }
+}
+
+
+/* Hamburger menu */
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    top: 1.8em;
+    right: 2.5%;
+    margin-left: -2em;
+    margin-top: -45px;
+    width: 3em;
+    height: 45px;
+    z-index: 20;
+}
+
+.hamburger div {
+    position: relative;
+    width: 3em;
+    height: 9px;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 53, 53, 0.973);
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.hidden_nav {
+    text-align: center;
+}
+
+.hidden_nav a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    display: inline-block;
+    margin-top: 0.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.hidden_nav a:first-child {
+    margin-top: 1.9em;
+}
+
+.hidden_nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: red;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden_nav a:hover {
+    color: white;
+}
+
+.hidden_nav a:hover:before {
+    height: 100%;
+}
+
+#toggle:checked+.hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+}
+
+#toggle:checked+.hamburger+.nav {
+    top: 0;
+    transform: scale(1);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #FEFFFF;
+    font-size: 300%;
+}
+
+#header {
+    text-align: center;
+}
+
+#buttonHeader {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    border-style: hidden;
+    font-size: 120%;
+    cursor: pointer;
+}
+
+#buttonHeader:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+#space {
+    width: 100%;
+    height: 20px;
+}
+
+.summa {
+    position: absolute;
+    left: 75%;
+    font-size: 200%;
+    height: 280px;
+}
+
+.summa .open-button {
+    width: 300px;
+    cursor: pointer;
+}
+
+.summa .open-button:hover {
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .summa {
+        position: static;
+        text-align: center;
+        font-size: 250%;
+        left: 0;
+        margin-left: -95px !important;
+    }
+    .summa .open-button {
+        margin-left: 100px !important;
+        position: static;
+    }
+    #product {
+        margin: 0 !important;
+        margin-left: 20% !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #product {
+        margin: 0 !important;
+        margin-left: 12% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #product {
+        margin: 0 !important;
+        margin-left: 4% !important;
+    }
+}
+
+@media screen and (max-width: 501px) {
+    #product {
+        margin: 0 !important;
+        margin-left: 0% !important;
+        font-size: 150% !important;
+    }
+    #product button {
+        font-size: 16px !important;
+    }
+    #product img {
+        width: 150px !important;
+        height: 220px !important;
+    }
+}
+
+#product {
+    margin: 0 0% 0% 17%;
+    text-align: left;
+    padding: 0px;
+    font-size: 200%;
+    color: #FEFFFF;
+    display: flex;
+}
+
+#product button {
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#product .delete_goods {
+    font-size: 23px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#product button:hover {
+    background-color: red;
+    color: white;
+}
+
+#product img {
+    border-radius: 20px;
+    margin-right: 40px;
+    width: 200px;
+    height: 280px;
+}
+
+#headerButton {
+    margin: 8px 0 0 0;
+}
+
+#pusto {
+    text-align: center;
+    color: rgb(218, 168, 168);
+    font-size: 300%;
+}
+
+#login {
+    text-align: left;
+}
+
+#selectСhangeProductName {
+    width: 350px;
+}
+
+#selectСhangePicture {
+    width: 400px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+/* Корзина */
+
+.zakaz {
+    color: white;
+}
+
+.pusto {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.silka {
+    border: 0px;
+    background: #f8ba10;
+    color: black;
+    padding: .2em .75em;
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+@media screen and (max-width: 770px) {
+    .silka {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.silka:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.displaynonelogin {
+    display: none;
+}
+
+
+/* /////////////// */
+
+.icons {
+    height: 70px;
+    text-decoration: none;
+    color: #FEFFFF;
+    font-size: 30px;
+}
+
+.icons a {
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.silka_catalog {
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.silka_catalog:hover {
+    background-color: red;
+    color: white;
+}
+
+.nav1 {
+    float: left;
+    margin-left: 6px;
+}
+
+.nav2 {
+    position: absolute;
+    margin-top: 15px;
+    left: 40%;
+}
+
+.nav3 {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.nav3 a {
+    margin-left: 30px;
+}
+
+.navhr {
+    margin-bottom: 40px;
+    border: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+}

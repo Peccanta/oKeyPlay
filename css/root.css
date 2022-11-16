@@ -1,0 +1,310 @@
+* {
+    font-family: 'Russo One', sans-serif;
+}
+
+body {
+    background-image: url("../models/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* NAV */
+
+.icons {
+    height: 70px;
+    text-decoration: none;
+    color: #FEFFFF;
+    font-size: 30px;
+}
+
+.icons a {
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.nav1 {
+    float: left;
+    margin-left: 6px;
+}
+
+.nav2 {
+    float: left;
+    margin-left: 120px;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.nav2 p {
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+.nav3 {
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.nav3 a {
+    margin-left: 30px;
+}
+
+.navhr {
+    margin-bottom: 40px;
+    border: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #fff, rgba(0, 0, 0, 0));
+}
+
+
+/* //////// */
+
+.menu {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container p {
+    color: white;
+    font-size: 30px;
+}
+
+
+/*  */
+
+#poiskRoot {
+    text-align: center;
+}
+
+#poiskRoot select {
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 6px;
+    width: 300px;
+}
+
+#poiskRoot input {
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+    width: 400px;
+}
+
+#poiskRoot button {
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#poiskRoot button:hover {
+    color: white;
+    background-color: red;
+}
+
+#allProductsAdmin {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#allProductsAdmin table {
+    border-collapse: collapse;
+    border-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#allProductsAdmin td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#allProductsAdmin button {
+    font-size: 24px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#allProductsAdmin button:hover {
+    color: white;
+    background-color: red;
+}
+
+#allProductsAdmin #pusto {
+    color: red;
+    font-size: 40px;
+}
+
+#allProductsAdmin #buttonChangeProductsValuesSend {
+    font-size: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#allProductsAdmin #buttonChangeProductsValuesSend:hover {
+    color: white;
+    background-color: red;
+}
+
+#allProductsAdmin select {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 6px;
+}
+
+#allProductsAdmin input {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+}
+
+
+/*  */
+
+#addProduct {
+    text-align: center;
+}
+
+#addProduct p {
+    font-size: 30px;
+}
+
+#addProduct select {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 6px;
+}
+
+#addProduct input {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+}
+
+#addProduct button {
+    font-size: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#addProduct button:hover {
+    color: white;
+    background-color: red;
+}
+
+#addPlatform {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#addPlatform input {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+}
+
+#addPlatform button {
+    font-size: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#addPlatform button:hover {
+    color: white;
+    background-color: red;
+}
+
+#addGenre {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#addGenre input {
+    font-size: 20px;
+    vertical-align: middle;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+}
+
+#addGenre button {
+    font-size: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#addGenre button:hover {
+    color: white;
+    background-color: red;
+}
+
+.between {
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 800px;
+}
